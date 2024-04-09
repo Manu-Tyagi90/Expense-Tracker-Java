@@ -4,31 +4,32 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class ExpenseTrackerJava {
-
+	 static int ab = 1;
+	 static int a=0;
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int ab = 1;
+
 		try {
 			while(ab!=0) {
-			System.out.println("Enter 1 for Adding Details ");
-			int a = scan.nextInt();
+			System.out.println("ADD 1 for Adding Details ");
+			
+			a = scan.nextInt();
+			//a = scan.nextLine();
+			
 			switch(a) {
 			case 1:
 				SavingsDetail sd = new SavingsDetail();
 				sd.Hello();
 				break;
 			default :
-				System.out.println("Please Enter Either 1 or 2");
+				System.out.println("You Write a Wrong KeyWord");
 				}
 			System.out.println("Enter 0 to Exit Else press any key");
 			ab = scan.nextInt();
-			scan.close();
+			
 			
 			}
-			
-			
-			
-			
+				
 		} 
 		
 		catch (Exception e) {
